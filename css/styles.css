@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   padding: 0%;
   margin: 0;
@@ -20,6 +22,10 @@
   --secondary-container-color: #252d44;
   --primary-text-color: white;
   --secondary-text-color: #3B466;
+  font-family: "Chivo Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
 }
 
 body {
@@ -73,10 +79,14 @@ body {
   -o-border-radius: 1rem;
 }
 
+.output {
+  text-align: end;
+}
+
 .btn {
   background-color: var(--btn-bg-color);
   border-radius: 1rem;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
   color: var(--btn-font-color);
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -167,7 +177,7 @@ body {
   grid-area: btn-sub;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 520px) {
   body {
     background-color: var(--secondary-container-color);
   }
